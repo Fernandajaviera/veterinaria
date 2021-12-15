@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pet Histories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Weight</th>
+      <th>Height</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pet_history.each do |pet_history| %>
+      <tr>
+        <td><%= pet_history.peso %></td>
+        <td><%= pet_history.altura %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
